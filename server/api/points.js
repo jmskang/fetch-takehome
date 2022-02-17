@@ -5,6 +5,7 @@ const { getPoints, addPoints, spendPoints, getTransactions } = require('../contr
 router.get('/', (req, res) => {
   res.send('Please provide a User ID');
 });
+
 // Get list of point balances for a user by userId
 router.get('/:userId', (req, res) => {
   const userId = req.params.userId;
